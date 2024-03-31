@@ -9,5 +9,6 @@ import java.util.List;
 
 @Repository
 public interface CDCRepository extends JpaRepository<CDC, Integer> {
+    CDC findByDev(Dev dev);
 
 }

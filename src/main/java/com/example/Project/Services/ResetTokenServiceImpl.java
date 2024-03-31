@@ -25,6 +25,7 @@ private final UserInterface userRepo;
         }
 
         User user = passwordResetToken.getUser();
+        System.out.println(newPassword);
         user.setPassword(passwordEncoder.encode(newPassword));
 
         System.out.println("new password"+user);

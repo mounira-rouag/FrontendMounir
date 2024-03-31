@@ -31,8 +31,7 @@ public class Validation {
     @Column(name = "`EtatValid`")
     private String EtatValid;
 
-    @Column(name = "`IdVer`")
-    private int IdVer;
+
 
     @JsonIgnore
     @ManyToMany(mappedBy = "validations")

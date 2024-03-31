@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import javax.print.DocFlavor;
 import java.util.List;
 import java.util.Set;
 
@@ -29,7 +30,7 @@ public class Dev {
     private String devComment;
     @Column(name = "`NumBugzilla`")
     private String numBug;
-
+    private String Jira;
 
     @ManyToOne
     @JoinColumn(name = "`IdCDC`")

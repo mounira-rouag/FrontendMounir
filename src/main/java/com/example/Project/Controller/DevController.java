@@ -128,8 +128,8 @@ private final VehiculeServiceImpl vehiculeServieImpl;
        return allDevs;
 
     }
-
-    public Dev updateDev(int id, Dev updatedDev) {
+@PutMapping("/update/{id}")
+    public Dev updateDev(@PathVariable int id,@RequestBody Dev updatedDev) {
         Dev existingDev = devRepo.findById(id).orElse(null);
         if (existingDev == null) {
 
